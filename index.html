@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0060)file:///C:/Users/cleme/Desktop/SUNA/suna-missions%20(4).html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bureau des Missions - Village de Suna</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <link href="./Bureau des Missions - Village de Suna_files/css2" rel="stylesheet">
     <style>
         :root {
             --sand-light: #f4e4c1;
@@ -1222,7 +1222,7 @@
     </style>
 </head>
 <body>
-    <div class="sand-particles" id="sandParticles"></div>
+    <div class="sand-particles" id="sandParticles"><div class="particle" style="left: 26.3308%; animation-delay: 2.79108s; animation-duration: 13.0073s;"></div><div class="particle" style="left: 7.94647%; animation-delay: 9.38346s; animation-duration: 11.0287s;"></div><div class="particle" style="left: 12.3644%; animation-delay: 13.5088s; animation-duration: 18.964s;"></div><div class="particle" style="left: 35.4562%; animation-delay: 10.7313s; animation-duration: 10.3479s;"></div><div class="particle" style="left: 45.947%; animation-delay: 13.4751s; animation-duration: 13.1688s;"></div><div class="particle" style="left: 14.9649%; animation-delay: 5.27666s; animation-duration: 18.351s;"></div><div class="particle" style="left: 97.6485%; animation-delay: 8.95677s; animation-duration: 14.768s;"></div><div class="particle" style="left: 88.915%; animation-delay: 0.810688s; animation-duration: 19.9329s;"></div><div class="particle" style="left: 29.381%; animation-delay: 5.29003s; animation-duration: 10.3118s;"></div><div class="particle" style="left: 35.1625%; animation-delay: 2.93095s; animation-duration: 10.9721s;"></div><div class="particle" style="left: 88.0426%; animation-delay: 14.3983s; animation-duration: 15.5788s;"></div><div class="particle" style="left: 11.7984%; animation-delay: 8.87815s; animation-duration: 14.8214s;"></div><div class="particle" style="left: 91.6319%; animation-delay: 0.0722545s; animation-duration: 18.7772s;"></div><div class="particle" style="left: 2.65617%; animation-delay: 9.77294s; animation-duration: 18.76s;"></div><div class="particle" style="left: 93.073%; animation-delay: 6.20907s; animation-duration: 11.7005s;"></div><div class="particle" style="left: 11.4463%; animation-delay: 13.8428s; animation-duration: 11.2165s;"></div><div class="particle" style="left: 52.2818%; animation-delay: 8.85024s; animation-duration: 14.4383s;"></div><div class="particle" style="left: 49.2354%; animation-delay: 5.05217s; animation-duration: 15.5685s;"></div><div class="particle" style="left: 73.7104%; animation-delay: 3.72865s; animation-duration: 10.1764s;"></div><div class="particle" style="left: 12.2788%; animation-delay: 4.25787s; animation-duration: 19.4583s;"></div><div class="particle" style="left: 81.0768%; animation-delay: 11.3898s; animation-duration: 11.3885s;"></div><div class="particle" style="left: 67.2614%; animation-delay: 10.369s; animation-duration: 17.3728s;"></div><div class="particle" style="left: 91.201%; animation-delay: 3.13057s; animation-duration: 12.8675s;"></div><div class="particle" style="left: 8.48671%; animation-delay: 10.5792s; animation-duration: 18.9677s;"></div><div class="particle" style="left: 63.5444%; animation-delay: 12.651s; animation-duration: 11.6592s;"></div><div class="particle" style="left: 16.3785%; animation-delay: 10.4064s; animation-duration: 10.573s;"></div><div class="particle" style="left: 84.046%; animation-delay: 0.599968s; animation-duration: 15.9172s;"></div><div class="particle" style="left: 19.2491%; animation-delay: 5.43913s; animation-duration: 12.6115s;"></div><div class="particle" style="left: 54.2059%; animation-delay: 12.4356s; animation-duration: 10.9873s;"></div><div class="particle" style="left: 53.5635%; animation-delay: 14.2222s; animation-duration: 17.3624s;"></div></div>
 
     <!-- Admin Panel -->
     <div class="admin-panel" id="adminPanel">
@@ -1237,7 +1237,7 @@
 
         <div class="stats-bar">
             <div class="stat-item">
-                <div class="stat-value" id="totalMissions">0</div>
+                <div class="stat-value" id="totalMissions">15</div>
                 <div class="stat-label">Missions Disponibles</div>
             </div>
             <div class="stat-item">
@@ -1261,9 +1261,9 @@
             </div>
 
             <div class="filters">
-                <button class="filter-btn active" data-filter="all"><span>Toutes</span></button>
+                <button class="filter-btn" data-filter="all"><span>Toutes</span></button>
                 <button class="filter-btn" data-filter="E"><span>Rang E</span></button>
-                <button class="filter-btn" data-filter="D"><span>Rang D</span></button>
+                <button class="filter-btn active" data-filter="D"><span>Rang D</span></button>
                 <button class="filter-btn" data-filter="C"><span>Rang C</span></button>
                 <button class="filter-btn" data-filter="B"><span>Rang B</span></button>
                 <button class="filter-btn" data-filter="A"><span>Rang A</span></button>
@@ -1276,10 +1276,15 @@
         <!-- TAB: Recap -->
         <div class="tab-content" id="tab-recap">
             <div class="recap-view-toggle">
-                <button class="view-toggle-btn active" onclick="toggleRecapView('cards')">Vue Cartes</button>
-                <button class="view-toggle-btn" onclick="toggleRecapView('table')">Vue Tableau</button>
+                <button class="view-toggle-btn active" onclick="toggleRecapView(&#39;cards&#39;)">Vue Cartes</button>
+                <button class="view-toggle-btn" onclick="toggleRecapView(&#39;table&#39;)">Vue Tableau</button>
             </div>
-            <div id="recapCardsView"></div>
+            <div id="recapCardsView">
+                    <div style="text-align: center; padding: 3rem; color: var(--night-blue);">
+                        <h2 style="font-family: &#39;Cinzel&#39;, serif; margin-bottom: 1rem;">Aucune Mission Complétée</h2>
+                        <p>Les missions complétées apparaîtront ici.</p>
+                    </div>
+                </div>
             <div id="recapTableView" style="display: none;"></div>
         </div>
 
@@ -1291,15 +1296,16 @@
 
     <div class="modal" id="missionModal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeModal()">&times;</span>
-            <h2 class="modal-title" id="modalTitle"></h2>
-            <div id="modalBody"></div>
+            <span class="modal-close" onclick="closeModal()">×</span>
+            <h2 class="modal-title" id="modalTitle">Accepter la Mission</h2>
+            <div id="modalBody">
+            </div>
         </div>
     </div>
 
     <div class="modal" id="adminModal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeAdminModal()">&times;</span>
+            <span class="modal-close" onclick="closeAdminModal()">×</span>
             <div class="admin-login-form">
                 <h2 class="admin-form-title">Connexion Admin</h2>
                 <div class="admin-form-group">
@@ -1956,12 +1962,11 @@
                         <div>
                             ${rewardDisplay}
                             ${resourcesDisplay}
-                            <div class="mission-duration">⏱ ${mission.duration}</div>
                         </div>
                         <div style="display: flex; gap: 0.5rem;">
-                            <button class="accept-btn" onclick="event.stopPropagation(); acceptMission(${mission.id})">
+                            ${isAdminLoggedIn ? `<button class="accept-btn" onclick="event.stopPropagation(); acceptMission(${mission.id})">
                                 Accepter
-                            </button>
+                            </button>` : ''}
                             ${deleteBtn}
                         </div>
                     </div>
@@ -2014,7 +2019,6 @@
                 <div style="margin: 1.5rem 0;">
                     <h3 style="margin-bottom: 1rem; color: var(--night-blue);">${mission.title}</h3>
                     <p style="margin-bottom: 1rem;"><strong>Rang:</strong> ${mission.rank}</p>
-                    <p style="margin-bottom: 1rem;"><strong>Durée:</strong> ${mission.duration}</p>
                     
                     <div class="reward-input-group">
                         <label>Récompense en Besants (optionnel):</label>
@@ -2160,7 +2164,7 @@
                     </div>
                     
                     <div class="mission-details" style="margin-top: 1rem;">
-                        <div class="mission-duration">⏱ ${activeMission.mission.duration}</div>
+                        
                     </div>
                 `;
                 container.appendChild(card);
@@ -2285,9 +2289,6 @@
                         </div>
                         <div>
                             <strong>Type:</strong> ${completed.mission.type}
-                        </div>
-                        <div>
-                            <strong>Durée:</strong> ${completed.mission.duration}
                         </div>
                         <div>
                             <strong>Récompenses:</strong> ${rewardDisplay}
@@ -2428,10 +2429,9 @@
                     <p style="margin-bottom: 1rem;"><strong>Description:</strong><br>${mission.description}</p>
                     <p style="margin-bottom: 1rem;"><strong>Détails:</strong><br>${mission.details}</p>
                     ${rewardText}
-                    <p style="margin-bottom: 1rem;"><strong>Durée estimée:</strong> ${mission.duration}</p>
-                    <button class="accept-btn" style="width: 100%; margin-top: 1rem; padding: 1rem;" onclick="acceptMission(${mission.id}); closeModal();">
+                    ${isAdminLoggedIn ? `<button class="accept-btn" style="width: 100%; margin-top: 1rem; padding: 1rem;" onclick="acceptMission(${mission.id}); closeModal();">
                         Accepter la Mission
-                    </button>
+                    </button>` : ''}
                 </div>
             `;
             modal.classList.add('active');
@@ -2452,5 +2452,5 @@
         // Initialize on load
         init();
     </script>
-</body>
-</html>
+
+</body></html>
